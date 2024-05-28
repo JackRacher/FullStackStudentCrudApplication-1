@@ -30,6 +30,7 @@ public class StudentController {
 
 	@PostMapping("/student")
 	public Student createStudent(@RequestBody Student student) {
+		System.out.println("Hello");
 		return repo.save(student);
 	}
 
